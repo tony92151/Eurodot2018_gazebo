@@ -9,7 +9,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/visualSTL/base.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/visualSTL/base.STL" />
       </geometry>
       <material name="C0C0C0">
         <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -18,7 +18,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/collisionSTL/base.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/collisionSTL/base.STL" />
       </geometry>
     </collision>
   </link>
@@ -31,7 +31,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/visualSTL/wall.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/visualSTL/wall.STL" />
       </geometry>
       <material name="C0C0C0">
         <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -40,7 +40,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/collisionSTL/wall.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/collisionSTL/wall.STL" />
       </geometry>
     </collision>
   </link>
@@ -53,7 +53,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/visualSTL/green.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/visualSTL/green.STL" />
       </geometry>
       <material name="40FF00">
         <color rgba="0 1 0.250980392156863 1" />
@@ -62,7 +62,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/collisionSTL/green.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/collisionSTL/green.STL" />
       </geometry>
     </collision>
   </link>
@@ -75,7 +75,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/visualSTL/wall2.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/visualSTL/wall2.STL" />
       </geometry>
       <material name="C0C0C0">
         <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -84,7 +84,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/collisionSTL/wall2.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/collisionSTL/wall2.STL" />
       </geometry>
     </collision>
   </link>
@@ -97,7 +97,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/visualSTL/rad.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/visualSTL/rad.STL" />
       </geometry>
       <material name="0000FF">
         <color rgba="1 0 0 1" />
@@ -106,7 +106,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Eurodot_2018_gazebo/eu_map_Exported/eu_map/collisionSTL/rad.STL" />
+        <mesh filename="package://Eurodot2018_gazebo/eu_map_Exported/eu_map/collisionSTL/rad.STL" />
       </geometry>
     </collision>
   </link>
