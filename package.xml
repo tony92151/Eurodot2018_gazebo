@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>Eurodot_2018_gazebo</name>
+  <name>Eurodot2018_gazebo</name>
   <version>0.0.0</version>
-  <description>The Eurodot_2018_gazebo package</description>
+  <description>The Eurodot2018_gazebo package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->

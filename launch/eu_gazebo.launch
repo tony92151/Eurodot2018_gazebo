@@ -3,7 +3,7 @@
 
  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
 
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find Eurodot_2018_gazebo)/eu_map_Exported/eu_map/eu_map.urdf'"/>
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find Eurodot2018_gazebo)/eu_map_Exported/eu_map/eu_map.urdf'"/>
 
  <node name="urdf_spawner" 
  	pkg="gazebo_ros" 
