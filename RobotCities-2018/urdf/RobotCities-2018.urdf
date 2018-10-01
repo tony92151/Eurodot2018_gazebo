@@ -1,0 +1,255 @@
+<robot
+  name="RobotCities-2018">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="1.522 0.0388426480905344 0.969203571747516"
+        rpy="0 0 0" />
+      <mass
+        value="174.384615138785" />
+      <inertia
+        ixx="32.2223910185051"
+        ixy="-8.43769498715119E-15"
+        ixz="-7.54951656745106E-15"
+        iyy="132.291426227518"
+        iyz="7.8503426298791"
+        izz="110.05690021114" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.709803921568627 0.690196078431373 0.631372549019608 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="slide_Link">
+    <inertial>
+      <origin
+        xyz="1.0012 -0.025918 1.522"
+        rpy="0 0 0" />
+      <mass
+        value="3.3001" />
+      <inertia
+        ixx="8.1621"
+        ixy="-2.1845E-17"
+        ixz="1.3982E-15"
+        iyy="10.148"
+        iyz="9.5241E-16"
+        izz="1.9856" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/slide_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.38039 0.6 0.23137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/slide_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 -6.123E-17 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="slide_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="green_Link">
+    <inertial>
+      <origin
+        xyz="0.46357 0.18122 0.70359"
+        rpy="0 0 0" />
+      <mass
+        value="12.017" />
+      <inertia
+        ixx="11.959"
+        ixy="0.56263"
+        ixz="-6.5752"
+        iyy="15.547"
+        iyz="1.0177"
+        izz="3.8842" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/green_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.054902 0.054902 0.062745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/green_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2"
+    type="fixed">
+    <origin
+      xyz="0.012 0.392 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="green_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="red_Link">
+    <inertial>
+      <origin
+        xyz="-0.81925 0.076446 0.41566"
+        rpy="0 0 0" />
+      <mass
+        value="18.339" />
+      <inertia
+        ixx="9.3211"
+        ixy="-1.4888"
+        ixz="-12.959"
+        iyy="29.72"
+        iyz="-0.93701"
+        izz="20.753" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/red_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/red_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3"
+    type="fixed">
+    <origin
+      xyz="1.792 1E-05 0.075"
+      rpy="1.5708 6.123E-17 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="red_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="t_Link">
+    <inertial>
+      <origin
+        xyz="1.544 0.59293 -0.31922"
+        rpy="0 0 0" />
+      <mass
+        value="6.0503" />
+      <inertia
+        ixx="2.0656"
+        ixy="8.1879E-16"
+        ixz="3.1919E-16"
+        iyy="9.2547"
+        iyz="-0.0022626"
+        izz="11.291" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/t_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.81569 0.36471 0.15686 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotCities-2018/meshes/t_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4"
+    type="fixed">
+    <origin
+      xyz="-0.022 -0.851 0"
+      rpy="3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="t_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
