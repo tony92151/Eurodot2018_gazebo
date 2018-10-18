@@ -4,10 +4,10 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0.00358608863369359 -0.305093257484609 -0.0149621208311566"
+        xyz="0.10491 -1.7347E-18 -0.014893"
         rpy="0 0 0" />
       <mass
-        value="1.68994026795429" />
+        value="5" />
       <inertia
         ixx="0"
         ixy="0"
@@ -27,7 +27,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -44,10 +44,10 @@
     name="w1">
     <inertial>
       <origin
-        xyz="-3.94649590784724E-17 0.21 -0.015"
+        xyz="-2.7756E-17 -1.301E-18 3.4694E-18"
         rpy="0 0 0" />
       <mass
-        value="0.098005596771295" />
+        value="1" />
       <inertia
         ixx="0"
         ixy="0"
@@ -67,7 +67,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -84,23 +84,23 @@
     name="j1"
     type="continuous">
     <origin
-      xyz="0.0035861 -0.41 -6.8633E-05"
-      rpy="-6.123E-17 0 0" />
+      xyz="0.21 0 -0.015"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="w1" />
     <axis
-      xyz="1 0 0" />
+      xyz="0 -1 0" />
   </joint>
   <link
     name="w2">
     <inertial>
       <origin
-        xyz="-0.115 0 -0.015"
+        xyz="-5.5511E-17 1.3878E-17 7.9797E-17"
         rpy="0 0 0" />
       <mass
-        value="0.098005596771295" />
+        value="1" />
       <inertia
         ixx="0"
         ixy="0"
@@ -120,7 +120,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -137,23 +137,23 @@
     name="j2"
     type="continuous">
     <origin
-      xyz="0.0035861 -0.41 -6.8633E-05"
-      rpy="-6.123E-17 0 0" />
+      xyz="0 0.115 -0.015"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="w2" />
     <axis
-      xyz="1 0 0" />
+      xyz="0 -1 0" />
   </joint>
   <link
     name="w3">
     <inertial>
       <origin
-        xyz="0.115 0 -0.015"
+        xyz="0 0 -2.949E-17"
         rpy="0 0 0" />
       <mass
-        value="0.098005596771295" />
+        value="1" />
       <inertia
         ixx="0"
         ixy="0"
@@ -173,7 +173,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -190,13 +190,13 @@
     name="j3"
     type="continuous">
     <origin
-      xyz="0.0035861 -0.41 -6.8633E-05"
-      rpy="-6.123E-17 0 0" />
+      xyz="0 -0.115 -0.015"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="w3" />
     <axis
-      xyz="1 0 0" />
+      xyz="0 -1 0" />
   </joint>
 </robot>
