@@ -4,7 +4,7 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0.00358608863369359 -0.0149621208311566 0.305093257484609"
+        xyz="0.00358608863369359 -0.305093257484609 -0.0149621208311566"
         rpy="0 0 0" />
       <mass
         value="1.68994026795429" />
@@ -97,7 +97,7 @@
     name="w2">
     <inertial>
       <origin
-        xyz="-0.115 5.55111512312578E-17 -0.015"
+        xyz="-0.115 0 -0.015"
         rpy="0 0 0" />
       <mass
         value="0.098005596771295" />
@@ -135,7 +135,7 @@
   </link>
   <joint
     name="j2"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="0.0035861 -0.41 -6.8633E-05"
       rpy="-6.123E-17 0 0" />
@@ -145,9 +145,6 @@
       link="w2" />
     <axis
       xyz="1 0 0" />
-    <limit
-      effort="0"
-      velocity="0" />
   </joint>
   <link
     name="w3">
@@ -191,10 +188,10 @@
   </link>
   <joint
     name="j3"
-    type="revolute">
+    type="continuous">
     <origin
-      xyz="0.00358608863369358 -0.41 -6.86334715221801E-05"
-      rpy="-6.12303176911189E-17 0 0" />
+      xyz="0.0035861 -0.41 -6.8633E-05"
+      rpy="-6.123E-17 0 0" />
     <parent
       link="base_link" />
     <child
