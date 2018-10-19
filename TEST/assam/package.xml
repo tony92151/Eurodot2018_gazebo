@@ -7,7 +7,7 @@
 for assam robot</p>
   </description>
   <author>me</author>
-  <maintainer email="tony92151@gmail.com" />
+  <maintainer email="me2email@com" />
   <license>BSD</license>
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roslaunch</build_depend>
