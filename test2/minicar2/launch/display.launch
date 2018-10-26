@@ -6,7 +6,7 @@
     default="False" />
   <param
     name="robot_description"
-    textfile="$(find minicar)/robots/minicar.urdf" />
+    textfile="$(find minicar2)/robots/minicar2.urdf" />
   <param
     name="use_gui"
     value="$(arg gui)" />
@@ -22,5 +22,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find minicar)/urdf.rviz" />
+    args="-d $(find minicar2)/urdf.rviz" />
 </launch>

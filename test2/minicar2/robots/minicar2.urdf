@@ -1,13 +1,13 @@
 <robot
-  name="minicar">
+  name="minicar2">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.060886 7.494E-16 -0.01524"
+        xyz="0.060886 1.1935E-15 -0.01524"
         rpy="0 0 0" />
       <mass
-        value="0.60636" />
+        value="5" />
       <inertia
         ixx="0"
         ixy="0"
@@ -22,7 +22,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://minicar/meshes/base_link.STL" />
+          filename="package://minicar2/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -36,18 +36,18 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://minicar/meshes/base_link.STL" />
+          filename="package://minicar2/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
   <link
-    name="l_wh">
+    name="wl">
     <inertial>
       <origin
-        xyz="-1.3878E-17 -0.005 -5.5511E-17"
+        xyz="3.4694E-18 -0.005 -2.7756E-17"
         rpy="0 0 0" />
       <mass
-        value="0.050195" />
+        value="1" />
       <inertia
         ixx="0"
         ixy="0"
@@ -62,7 +62,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://minicar/meshes/l_wh.STL" />
+          filename="package://minicar2/meshes/wl.STL" />
       </geometry>
       <material
         name="">
@@ -76,36 +76,74 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://minicar/meshes/l_wh.STL" />
+          filename="package://minicar2/meshes/wl.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="j1"
+    name="jl"
     type="continuous">
     <origin
       xyz="0 0.06 -0.015"
-      rpy="0 0 6.9389E-17" />
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
-      link="l_wh" />
+      link="wl" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
   </joint>
   <link
-    name="r_wl" />
+    name="wr">
+    <inertial>
+      <origin
+        xyz="0 0.005 0"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://minicar2/meshes/wr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://minicar2/meshes/wr.STL" />
+      </geometry>
+    </collision>
+  </link>
   <joint
-    name="j2"
+    name="jr"
     type="continuous">
     <origin
       xyz="0 -0.06 -0.015"
-      rpy="0 0 6.9389E-17" />
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
-      link="r_wl" />
+      link="wr" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0.99083 0.13511" />
   </joint>
 </robot>
