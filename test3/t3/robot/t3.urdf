@@ -1,0 +1,149 @@
+<robot
+  name="t3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.040126 1.5266E-16 -0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.099686" />
+      <inertia
+        ixx="8.3905E-05"
+        ixy="-2.8195E-21"
+        ixz="1.6628E-21"
+        iyy="8.3662E-05"
+        iyz="2.873E-19"
+        izz="0.0001659" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://t3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://t3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="l_whe">
+    <inertial>
+      <origin
+        xyz="-2.0817E-17 -0.005 6.9389E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.0070372" />
+      <inertia
+        ixx="4.5624E-07"
+        ixy="-1.029E-39"
+        ixz="-1.1998E-43"
+        iyy="7.952E-07"
+        iyz="-2.8951E-39"
+        izz="4.5624E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://t3/meshes/l_whe.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://t3/meshes/l_whe.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_jo"
+    type="continuous">
+    <origin
+      xyz="0 -0.06 -0.005"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="l_whe" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="r_whe">
+    <inertial>
+      <origin
+        xyz="6.9389E-18 0.005 -6.9389E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.0070372" />
+      <inertia
+        ixx="4.5624E-07"
+        ixy="-1.029E-39"
+        ixz="-1.1998E-43"
+        iyy="7.952E-07"
+        iyz="-1.1479E-39"
+        izz="4.5624E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://t3/meshes/r_whe.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://t3/meshes/r_whe.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_jo"
+    type="continuous">
+    <origin
+      xyz="0 0.06 -0.005"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="r_whe" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
