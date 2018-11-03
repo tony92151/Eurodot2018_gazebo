@@ -1,5 +1,9 @@
+<?xml version='1.0'?>
 <robot
-  name="t3">
+  name="t3" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find t3)/robots/t3.gazebo" />
+
   <link
     name="base_link">
     <inertial>
