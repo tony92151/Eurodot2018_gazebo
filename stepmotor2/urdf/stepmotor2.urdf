@@ -1,0 +1,96 @@
+<robot
+  name="stepmotor2">
+  <link
+    name="motorbase">
+    <inertial>
+      <origin
+        xyz="-0.000859097170120963 -0.000341800187754871 -0.000199540178000858"
+        rpy="0 0 0" />
+      <mass
+        value="0.302591270427399" />
+      <inertia
+        ixx="0.000100341980135441"
+        ixy="3.60191920327096E-21"
+        ixz="-1.10245493485852E-21"
+        iyy="0.000100341980135441"
+        iyz="-3.86852414319975E-21"
+        izz="8.61288345178524E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://stepmotor2/meshes/motorbase.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://stepmotor2/meshes/motorbase.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="shaft">
+    <inertial>
+      <origin
+        xyz="-0.000861121867187112 -0.000341800191336777 1.53512652504286E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.308062156488833" />
+      <inertia
+        ixx="0.000103627977866361"
+        ixy="1.71258469548688E-15"
+        ixz="8.79384786804845E-09"
+        iyy="0.000103626729122263"
+        iyz="-7.36451864960641E-14"
+        izz="8.63155149084997E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://stepmotor2/meshes/shaft.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://stepmotor2/meshes/shaft.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="motorjoint"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="motorbase" />
+    <child
+      link="shaft" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
