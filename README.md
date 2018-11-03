@@ -3,12 +3,12 @@
 
 cd 
 
-cd catkin_es/src
+cd catkin_ws/src
 
 git clone https://github.com/tony92151/Eurodot2018_gazebo.git
 
 cd ..
 
-catkin_make
+catkin make
 
 roslaunch t3 gazebo.launch
